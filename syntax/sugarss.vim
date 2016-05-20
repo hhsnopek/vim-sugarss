@@ -20,36 +20,36 @@ sy keyword sssElement progress q rp rt ruby s samp script section select small
 sy keyword sssElement source span strong style sub summary sup table tbody td
 sy keyword sssElement textarea tfoot th thead time title tr track u ul var video
 sy keyword sssElement wbr
-hi link sssElement Constant
+hi link    sssElement Constant
 
 " class
 sy match sssClass /\(\.\)\a\+/
-hi link sssClass Identifier
+hi link  sssClass Identifier
 
 " id
 sy match sssID /\(\#\)\a\+/
-hi link sssID Identifier
+hi link  sssID Identifier
 
 " selector
 sy match sssSelector /\(@\)\a\+/
-hi link sssSelector Keyword
+hi link  sssSelector Keyword
 
 " Property
 sy match sssProperty /(\@!\S*\(\:\s\)\@=/
 sy match sssPropertyOverride /\:/
-hi link sssProperty Constant
-hi link sssPropertyOverride Normal
+hi link  sssProperty Constant
+hi link  sssPropertyOverride Normal
 
 " Measurement
 sy match sssUnit /\(em\|ex\|ex\|ch\|rem\)/
 sy match sssViewport /\(vh\|vw\|vmin\|vmax\)/
 sy match sssAbsoluteUnit /\(px\|mm\|cm\|in\|pt\|pc\)/
-hi link sssUnit Number
-hi link sssViewport Number
-hi link sssAbsoluteUnit Number
+hi link  sssUnit Number
+hi link  sssViewport Number
+hi link  sssAbsoluteUnit Number
 
 " pseudo classes
 sy match sssPseudoClass /\(\:\)\@<=\S*\((\|\,\)\@=/
-hi link sssPseudoClass Constant
+hi link  sssPseudoClass Constant
 
 let b:current_syntax = "sss"
