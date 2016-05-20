@@ -1,4 +1,4 @@
-# [SugarSS](https://github.com/postcss/sugar) syntax File
+# [SugarSS](https://github.com/postcss/sugarss) syntax file
 
 ## Installation
 
