@@ -19,7 +19,7 @@ sy keyword sssElement nav noscript object ol optgroup option output p param pre
 sy keyword sssElement progress q rp rt ruby s samp script section select small
 sy keyword sssElement source span strong style sub summary sup table tbody td
 sy keyword sssElement textarea tfoot th thead time title tr track u ul var video
-sy keyword sssElement wbr
+sy keyword sssElement wbr main
 hi link    sssElement Constant
 
 " class
@@ -33,6 +33,10 @@ hi link  sssID Identifier
 " selector
 sy match sssSelector /\(@\)\a\+/
 hi link  sssSelector Keyword
+
+'hell'
+"hell"
+'hell-o'
 
 " Property
 sy match sssProperty /(\@!\S*\(\:\s\)\@=/
@@ -51,5 +55,8 @@ hi link  sssAbsoluteUnit Number
 " pseudo classes
 sy match sssPseudoClass /\(\:\)\@<=\S*\((\|\,\)\@=/
 hi link  sssPseudoClass Constant
+
+sy match sssString /\(\'\|\"\)\@<=\S*\(\'\|\"\)\@=/
+hi link sssString String
 
 let b:current_syntax = "sss"
