@@ -34,10 +34,6 @@ hi link  sssID Identifier
 sy match sssSelector /\(@\)\a\+/
 hi link  sssSelector Keyword
 
-'hell'
-"hell"
-'hell-o'
-
 " Property
 sy match sssProperty /(\@!\S*\(\:\s\)\@=/
 sy match sssPropertyOverride /\:/
